@@ -10,7 +10,7 @@ func sendMail(factory AtomicBoomFactory, n string, w int, ts int64) int { // 工
 	return boom.DfMail()
 }
 
-func TestOperator(t *testing.T) {
+func TestMail(t *testing.T) {
 	var (
 		factory AtomicBoomFactory
 	)
