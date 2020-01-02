@@ -56,7 +56,7 @@ func TestCond(t *testing.T) {
 			fmt.Println("goroutine_", i, " start in t:", int(time.Now().Unix()))
 			cd.Wait() // 阻塞住等通知
 			cd.L.Unlock()
-			fmt.Println("goroutine_", i, " start in t:", int(time.Now().Unix()))
+			fmt.Println("goroutine_", i, " end in t:", int(time.Now().Unix()))
 		}(i)
 	}
 	//sw:=0
